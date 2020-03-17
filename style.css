@@ -1,16 +1,100 @@
 /* Type your code here */
-
-
-/* change the font family and spacing as per your project font */
-.footer{
-    display:flex;
-    flex-direction: row;
-    align-content: flex-end;
-	position: relative;
-	top: 750px;
-	margin-left: 80px;
-	font-size: 18px;
-	font-family: Nunito Sans;
-    font-style: normal;
-    
+body{
+	background-image: url(./assets/background-image1.png);
+	position: absolute;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
+header{
+margin-left:80%;
+}
+h2
+{
+font-weight: 10;
+font-size: 6rem;
+}
+h4{
+	color: grey;
+	font-size: 4rem;
+}
+table{
+	font-size: 1.5rem;
+	font-weight: 10;
+	width: 1500px;
+	height: 1px;
+	border-radius: 1px;
+	border-style: solid;
+	border-color: black;
+	position: relative;
+}
+tr{
+	padding:10px;
+	border:solid 1px;
+	border-right: none;
+	border-left: none;
+	text-align: left;
+}
+table,td,th{
+	border-collapse: collapse;
+	
+}
+.footer{
+    
+	margin-top: 10%;
+	margin-left: 80px;
+	}
+	.fill{
+		background-color: orangered;
+	}
+
+	.overlay {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.7);
+		/* transition: opacity 500ms; */
+		visibility: hidden;
+		opacity: 0;
+	  }
+	  .overlay:target {
+		visibility: visible;
+		opacity: 1;
+	  }
+	  
+	  .popup {
+		margin: 70px auto;
+		padding: 20px;
+		background: #fff;
+		border-radius: 5px;
+		width: 30%;
+		position: relative;
+		/* transition: all 5s ease-in-out; */
+	  }
+	  .popup .close {
+		position: absolute;
+		top: 20px;
+		right: 30px;
+		/* transition: all 200ms; */
+		font-size: 30px;
+		font-weight: bold;
+		text-decoration: none;
+		color: #333;
+	  }
+	  .popup .close:hover {
+		color: #06D85F;
+	  }
+	  .popup .content {
+		max-height: 30%;
+		overflow: auto;
+	  }
+	  
+	  @media screen and (max-width: 700px){
+		.box{
+		  width: 70%;
+		}
+		.popup{
+		  width: 70%;
+		}
+	  }
